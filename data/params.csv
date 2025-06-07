@@ -1,0 +1,14 @@
+mesh_file_name,../data/volume.msh
+output_dir,output
+degree,1
+T,20
+deltat,0.1
+d_axn,3.0
+d_ext,1.5
+alpha,0.6
+diffusion_type,1
+seed_point_x,45.0
+seed_point_y,55.0
+seed_point_z,54.0
+seed_radius,10
+initial_seed,0.1

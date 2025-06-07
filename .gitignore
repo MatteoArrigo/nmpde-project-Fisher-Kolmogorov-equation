@@ -1,36 +1,64 @@
-## C++ #########################################################################
+# Ignore build directories
+/build/
+/output/
+/CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
 
-# Prerequisites
-*.d
+# Ignore temporary or backup files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
 
-# Compiled Object files
-*.slo
-*.lo
+# Ignore generated files
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
 *.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
 *.a
-*.lib
-
-# Executables
+*.dll
 *.exe
-*.out
-*.app
 
-*/build/*
+# Ignore deal.II-specific files
+.dealii/
+*.h5
+*.pvtu
+*.vtu
+*.pvd
+*.vtk
+*.gnuplot
+*.results
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore Python virtual environments (if used for pre/post-processing)
+venv/
+__pycache__/
+*.py[cod]
+
+# Ignore LaTeX auxiliary files (if used for documentation)
+*.aux
+*.out
+*.toc
+*.log
+*.gz
+*.pdf
+*.dvi
+*.bbl
+*.blg
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore mesh file
+*.msh 
+# Ignore results file
+data/timing_results.csv
+# Ignore report dir
+/report/
