@@ -58,6 +58,7 @@ Thumbs.db
 
 # Ignore mesh file
 *.msh 
+*.stl
 # Ignore results file
 data/timing_results.csv
 # Ignore report dir

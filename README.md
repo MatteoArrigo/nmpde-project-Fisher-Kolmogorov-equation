@@ -66,7 +66,14 @@ Run the executable optionally providing a CSV parameter file path:
 
 - The 3D simulation reads parameters from a CSV file.
 - If no command-line argument is given, the default file `../data/params.csv` is used.
-
 ### Input Data
-- The format to be used for the csv parameter file is 1 pair `<key>,<value>` in each new line. A default file is available at data/params.csv as an example.
-- The mesh used for the simulation is available [here](https://polimi365-my.sharepoint.com/:u:/g/personal/10461512_polimi_it/EY9ZPoq279JArvbXLPR1pNcB-wjU5tPZLClfO_4O9EYbtg?e=C1aIRH). It is provided in `.stl` format and must be preprocessed with `gmsh` to generate a `.msh` file.
+
+- The CSV parameter file should contain one `<key>,<value>` pair per line. A default example is available at `data/params.csv`.
+- The simulation mesh can be downloaded [here](https://polimi365-my.sharepoint.com/:u:/g/personal/10461512_polimi_it/EY9ZPoq279JArvbXLPR1pNcB-wjU5tPZLClfO_4O9EYbtg?e=C1aIRH). It is provided in `.stl` format and must be preprocessed with `gmsh` to generate a `.msh` file.
+- To preprocess the mesh, use the `convert_mesh.geo` script in the `/scripts` directory.
+
+The converter script contains two strings specifying the input `.stl` file path and the output `.msh` file path. The default values are `./brain-h3.0.stl` and `./data/volume.msh`.
+
+If the input file with the default name is present, you can generate the mesh by running:
+
+    gmsh scripts/convert_mesh.geo -
