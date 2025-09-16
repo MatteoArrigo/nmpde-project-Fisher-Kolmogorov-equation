@@ -66,6 +66,9 @@ Run the executable optionally providing a CSV parameter file path:
 
 - The 3D simulation reads parameters from a CSV file.
 - If no command-line argument is given, the default file `../data/params.csv` is used.
+
+En example of what results can be obtained in this case for different parameters is shown below.
+![Demo](example_gif.gif)
 ### Input Data
 
 - The CSV parameter file should contain one `<key>,<value>` pair per line. A default example is available at `data/params.csv`.
